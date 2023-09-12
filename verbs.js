@@ -1,4 +1,4 @@
-[
+const verbs = [
   {
     "infinitive": "abide",
     "pastSimple": "abode / abided",
@@ -3482,4 +3482,6 @@
     "pastParticiplePronunciation": "[ˈrɪtn]",
     "translation": "писати"
   }
-]
+];
+
+module.exports = verbs;
