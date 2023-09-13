@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">&#x1F4DA 3forms</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">На головну</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Топ 10</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Топ 50</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Вчити <span class="badge bg-info">SOON</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-xxl">
+    <form>
+        <label for="exampleDataList" class="form-label mt-3">Пошук дієслів:</label>
+        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Почни вводити дієслово будь-якої форми...">
+        <datalist id="datalistOptions">
+            <option value="be">
+            <option value="have">
+            <option value="get">
+            <option value="become">
+            <option value="begin">
+        </datalist>
+        <button type="button" class="btn btn-success d-block mt-3 mx-auto">Шукати</button>
+    </form>
+</div>
