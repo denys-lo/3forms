@@ -1,5 +1,54 @@
-<section>
+<section class="verb-body">
     <div class="container-xxl">
-        <h1>Неправильні форми дієслова {{infinitive}}</h1>
+        <h1 class="mt-2 text-center">3 форми {{infinitive}}</h1>
+        <h2 class="mt-2 text-center">Форми неправильного дієслова {{infinitive}}</h2>
+        <div class="text-center d-sm-block d-md-flex justify-content-between">
+            <div class="infinitive alert alert-warning me-md-1">
+                <h3>Перша форма неправильного дієслова {{infinitive}}:</h3>
+                <span class="fw-light">Infinitive (V1)</span>
+                <hr>
+                <span class="fw-bold">{{infinitive}}</span>
+                <span>{{infinitivePronunciation}}</span>
+            </div>
+            <div class="pastSimple alert alert-info me-md-1">
+                <h3>Друга форма неправильного дієслова {{infinitive}}:</h3>
+                <span class="fw-light">Past Simple (V2)</span>
+                <hr>
+                <span class="fw-bold">{{pastSimple}}</span>
+                <span>{{pastSimplePronunciation}}</span>
+            </div>
+            <div class="pastParticiple alert alert-danger">
+                <h3>Третя форма неправильного дієслова {{infinitive}}:</h3>
+                <span class="fw-light">Past Participle (V3)</span>
+                <hr>
+                <span class="fw-bold">{{pastParticiple}}</span>
+                <span>{{pastParticiplePronunciation}}</span>
+            </div>
+        </div>
+        <div class="translation alert alert-success text-center">
+            <h3>Переклад неправильного дієслова {{infinitive}}:</h3>
+            <hr>
+            <span class="fw-bold">{{translation}}</span>
+        </div>
+        <div class="details alert alert-secondary">
+            <h3>Все про слово {{infinitive}}:</h3>
+            <hr>
+            <h4>{{infinitive}} є правильним чи неправильним дієсловом?</h4>
+            <p><span class="fw-bold">{{infinitive}}</span> належить до неправильних дієслів.</p>
+            <hr>
+            <h4>Як перекладається {{infinitive}}?</h4>
+            <p>Англійське дієслово <span class="fw-bold">{{infinitive}}</span>, перекладається як: <span class="fw-bold">{{translation}}</span>.</p>
+            <hr>
+            <h4>Коли і яку форму слова {{infinitive}} потрібно використовувати?</h4>
+            <ul>
+                <li>Перша форма <span class="fw-bold text-warning">{{infinitive}}</span> використовується в Present simple, Future Simple.</li>
+                <li>Друга форма <span class="fw-bold text-info">{{pastSimple}}</span> використовується в Past simple.</li>
+                <li>Третя  форма <span class="fw-bold text-danger">{{pastParticiple}}</span> використовується в Present perfect, Past perfect.</li>
+            </ul>
+            <p>{{infinitive}} в past simple буде {{pastSimple}}. (V2)</p>
+            <p>{{infinitive}} в future simple буде {{infinitive}} . (will + V1)</p>
+            <p>{{infinitive}} в present perfect буде {{pastParticiple}}. (have/has + V3)</p>
+            <p>{{infinitive}} в past perfect буде {{pastParticiple}}. (had + V3)</p>
+        </div>
     </div>
 </section>
