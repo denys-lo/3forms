@@ -62,7 +62,10 @@ app.get("/search", (request, response) => {
       data.pastSimple.slice(data.pastSimple.indexOf("/") + 1).slice(0, verbLength) === verb ||
       data.pastParticiple.slice(0, verbLength) === verb
   );
-  response.json(result);
+
+  response.render("search.hbs", {
+    irregularVerbs: result
+  });
 });
 
 app.listen(3000);

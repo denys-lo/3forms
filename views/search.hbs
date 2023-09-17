@@ -1,0 +1,9 @@
+<ul class="mt-3 pe-3 ps-3 container-xxl list-group justify-content-center">
+    {{#each irregularVerbs}}
+        <li class="list-group-item list-group-item-action">
+            <a href="/irregular-verbs/{{this.infinitive}}" class="pe-auto">{{this.infinitive}}</a>
+            <br>
+            <span class="fw-light">{{this.infinitive}} | {{this.pastSimple}} | {{this.pastParticiple}}</span>
+        </li>
+    {{/each}}
+</ul>
