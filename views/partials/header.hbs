@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
     <div class="container-fluid">
         <a class="navbar-brand" href="/">&#x1F4DA 3forms</a>
 
@@ -13,7 +13,7 @@
                     <a class="nav-link" aria-current="page" href="/">На головну</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Таблиця неправильних дієслів</a>
+                    <a class="nav-link" href="/table">Таблиця неправильних дієслів</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#">Вчити неправильні дієслова граючи <span class="badge bg-info">SOON</span></a>
@@ -29,14 +29,13 @@
         <input type="text" name="verb" class="form-control" list="datalistOptions" id="exampleDataList"
                placeholder="Почни вводити дієслово будь-якої форми...">
         <datalist id="datalistOptions"></datalist>
-        <button type="submit" class="btn-search btn btn-success d-block mt-3 mx-auto">Шукати</button>
+        <button type="submit" class="btn-search btn btn-success d-block mt-3">Шукати</button>
     </form>
 </div>
 
 <script>
     const searchInput = document.getElementById('exampleDataList');
     const datalistOptions = document.getElementById('datalistOptions');
-    const option = document.querySelector('option');
 
     searchInput.addEventListener('keyup', async ({key}) => {
         let child = datalistOptions.lastElementChild;
@@ -52,7 +51,7 @@
 
         for (let i = 0; i < result.length; i++) {
             const option = document.createElement("option");
-            option.innerHTML = `<a href="/irregular-verbs/${result[i].infinitive}">${result[i].infinitive} | ${result[i].pastSimple} | ${result[i].pastParticiple}</a>`;
+            option.innerText = `${result[i].infinitive} | ${result[i].pastSimple} | ${result[i].pastParticiple}`;
             option.value = result[i].infinitive;
             datalistOptions.appendChild(option);
         }
