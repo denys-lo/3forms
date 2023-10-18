@@ -10,5 +10,6 @@ module.exports = createVerbsTable = () => {
 <td>${verb.translation}</td>
 </tr>`;
   }
+
   return tr;
 };
